@@ -3,11 +3,11 @@ package rockhomework4LV5_6;
 import java.util.Iterator;
 
 public class MyList<T> implements Iterable<T>{
-    private Node root;
-    private static class Node<T>{
-        Node<T> next;
-        T t;
-        public Node(Node next,T t){
+    private Node root;           
+    private static class Node<T>{      //节点类
+        Node<T> next;              //保存下一个节点  该节点里有下一个节点的地址值以及它自身T对象的属性t
+        T t;         
+        public Node(Node next,T t){  //设置下一个节点的方法
             this.next = next;
             this.t = t;
         }
