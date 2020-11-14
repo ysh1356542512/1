@@ -3,7 +3,7 @@ package rockhomework4LV5_6;
 import java.util.Iterator;
 
 public class MyList<T> implements Iterable<T>{
-    private Node root;           
+    private Node root;            //定义根节点
     private static class Node<T>{      //节点类
         Node<T> next;              //保存下一个节点  该节点里有下一个节点的地址值以及它自身T对象的属性t
         T t;         
